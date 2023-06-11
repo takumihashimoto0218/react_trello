@@ -2,7 +2,7 @@ import React from 'react'
 import { TaskCard } from "./TaskCard";
 import { AddTaskCardButton } from "./button/AddTaskCardButton";
 
-const TaskCards = () => {
+export const TaskCards = () => {
   return (
     <div>
       <TaskCard />
@@ -12,4 +12,3 @@ const TaskCards = () => {
 };
 
 export default TaskCards
-
