@@ -6,7 +6,7 @@ import { Tasks } from "./Tasks";
 
 export const TaskCard = () => {
   const [inputText, setInputText] = useState("");
-  const [taskLIst, setTaskLIst] = useState([]);
+  const [taskLIst, setTaskList] = useState([]);
   return (
     <div className="taskCard">
       <TaskCardTitle />
