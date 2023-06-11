@@ -15,6 +15,12 @@ header {
   text-align: center;
   padding: 4px 10%;
   margin-bottom: 50px;
-  background-color: rgb(102,94,74);
+  background-color: rgb(84, 8, 70);
    
+}
+
+.app{
+  background: url(../src/images/jim-josef-0spOq1mYtZw-unsplash.jpeg);
+  background-repeat: no-repeat;
+  height: 100vh;
 }
