@@ -16,11 +16,23 @@ export const TaskCardTitle = () => {
     e.preventDefault();
     setIsClick(false);
   }
+
+  const handleBlur = () => {
+    setIsClick(false)
+  }
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className="taskCardTitleArea">
       {isClick ? (
         <form onSubmit={handleSubmit}>
-          <input type="text" onChange={haandleChange} />
+          <input
+            className="taskCardTitleInupt"
+            autoFocus
+            type="text" 
+            onChange={haandleChange} 
+            onBlur={handleBlur} 
+            value={inputCardTitle}
+            maxLength="10"
+          />
         </form> 
       ): (
         <h3>{inputCardTitle}</h3>

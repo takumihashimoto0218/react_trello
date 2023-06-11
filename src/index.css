@@ -31,3 +31,18 @@ header {
   margin: 10px 1%;
   background-color: rgb(228,228,228);
 }
+
+.taskCardTitleInputArea{
+  margin-bottom: 10px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.taskCardTItleInput{
+  width: 80px;
+  font-size: 1.1rem;
+  padding: 4px, 6px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
