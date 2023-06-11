@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const TaskAddInput = ({
-  inputTest,
+  inputText,
   setInputText,
   setTaskList,
   taskList}) => {
