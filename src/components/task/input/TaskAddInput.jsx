@@ -8,6 +8,13 @@ export const TaskAddInput = ({
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(e);
+    setTaskList([
+      ...taskList,
+      {
+        text: inputText,
+      }
+    ])
+    setInputText("")
   }
 
   const handleChange =(e) => {
@@ -20,6 +27,7 @@ export const TaskAddInput = ({
           type="text"
           placeholder="add a task" className='taskAddInput'
           onChange={handleChange}
+          value={inputText}
         />
 
       </form>
