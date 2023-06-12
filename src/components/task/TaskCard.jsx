@@ -6,7 +6,7 @@ import { Tasks } from "./Tasks";
 
 export const TaskCard = () => {
   const [inputText, setInputText] = useState("");
-  const [taskLIst, setTaskList] = useState([]);
+  const [taskList, setTaskList] = useState([]);
   return (
     <div className="taskCard">
       <TaskCardTitle />
@@ -14,10 +14,10 @@ export const TaskCard = () => {
       <TaskAddInput 
         inputText={inputText} 
         setInputText={setInputText} 
-        setTaskLIst={setTaskList}
-        taskLIst={taskLIst}
+        setTaskList={setTaskList}
+        taskList={taskList}
       />
-      <Tasks />
+      <Tasks inputText={inputText} taskList={taskList} />
     </div>
   )
 }
